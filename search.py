@@ -1,14 +1,15 @@
 from fastapi import FastAPI, Query
+import os
 import pandas as pd
 import uvicorn
 from pydantic import BaseModel
 from typing import Optional
 
 
+file_path = os.path.join(os.getcwd(), "data", "Flipkart_Mobiles.csv")
 
-
-file_path = "C:/Users/bimal/venv_project/Flipkart_Mobiles.csv"  # Correct path
-df = pd.read_csv(file_path)
+# file_path = "C:/Users/bimal/venv_project/Flipkart_Mobiles.csv"  # Correct path
+# df = pd.read_csv(file_path)
 
 
 
