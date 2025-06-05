@@ -6,8 +6,12 @@ from typing import Optional
 
 
 
-# Load CSV into a pandas DataFrame
-df = pd.read_csv(r"C:\Users\bimal\venv_project\Flipkart_Mobiles.csv")
+
+file_path = "C:/Users/bimal/venv_project/Flipkart_Mobiles.csv"  # Correct path
+df = pd.read_csv(file_path)
+
+
+
 
 # Initialize FastAPI app
 app = FastAPI()
